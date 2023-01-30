@@ -52,7 +52,9 @@ function Navigation(props) {
 
     return (
         <div className='app-navigator'>
+            <div className='app-nav-box'>
             {display}
+            </div>
         </div>
     )
 }
