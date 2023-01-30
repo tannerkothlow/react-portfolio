@@ -3,14 +3,13 @@ import Navigation from './Navigation';
 import Footer from './Footer';
 
 function Header(props) {
-    const displayStates = ['about-me', 'portfolio', 'contact', 'resume'];
-
-    const display = displayStates[0];
+    const [displayState, setDisplayState] = useState('about-me');
 
     const changeState = (e) => {
-        // const headerElID = this.id;
         e.preventDefault();
-        display = e.target.id;
+
+        setDisplayState(e.target.id);
+        console.log(displayState);
     }
 
     return (
@@ -24,7 +23,7 @@ function Header(props) {
                 <li id='resume' onClick={changeState}>Resume</li>
             </ul>
             </div>
-            <Navigation display={display}/>
+            <Navigation display={displayState}/>
             <Footer />
         </div>
     )
