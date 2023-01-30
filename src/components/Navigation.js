@@ -4,7 +4,7 @@ import Project from './Project';
 function Navigation(props) {
     return (
         <div className='app-navigator'>
-            <p>Navigation</p>
+            <p>Navigation for {props.display}</p>
             <Project />
         </div>
     )
