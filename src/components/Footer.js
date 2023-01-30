@@ -3,7 +3,10 @@ import React, { useState } from 'react';
 function Footer () {
     return (
         <div className='app-footer'>
-            <p> Footer </p>
+            <ul>
+                <li>GitHub</li>
+                <li>LinkedIn</li>
+            </ul>
         </div>
     )
 }

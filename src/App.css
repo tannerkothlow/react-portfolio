@@ -21,6 +21,26 @@ html, body, #root, .portfolio-app, .app-header {
 .header-block {
     height: 140px;
     background-color: rgb(68, 68, 68);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-block ul {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header-block ul li {
+    list-style: none;
+}
+
+.header-block ul li:hover {
+    color: seashell;
+    cursor: pointer;
 }
 
 .app-navigator {
@@ -29,10 +49,33 @@ html, body, #root, .portfolio-app, .app-header {
     width: 100%;
 }
 
+.app-nav-box {
+    padding: 1% 5%;
+}
+
 .app-footer {
     height: 60px;
     width: 100%;
     background-color: rgb(68, 68, 68);
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-footer ul {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.app-footer ul li {
+    list-style: none;
+}
+
+.app-footer ul li:hover {
+    color: seashell;
+    cursor: pointer;
 }
 
