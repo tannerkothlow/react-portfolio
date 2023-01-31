@@ -14,8 +14,10 @@ function Project (props) {
         <div className='app-project'>
             {props.projects.map(project => (
                 <div className='app-project-card' key={project.id}>
+                    <div className='card-placard'>
                     <a href={project.url}>{project.title}</a>
                     <p>{project.tech}</p>
+                    </div>
                     <img src={project.image}></img>
                 </div>
             ))}

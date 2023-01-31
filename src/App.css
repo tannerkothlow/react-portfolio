@@ -66,6 +66,29 @@ html, body, #root, .portfolio-app, .app-header {
     /* color: rgb(185, 185, 185); */
 }
 
+.app-portfolio {
+    width: 100%;
+}
+
+.app-project {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.app-project-card {
+    width: 40%;
+}
+
+.app-project-card img {
+    width: 280px;
+}
+
+.card-placard {
+    position: relative;
+    top: 65px;
+    left: 13px;
+}
+
 .app-contact {
     display: flex;
     flex-direction: column;
