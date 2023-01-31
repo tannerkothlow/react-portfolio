@@ -81,6 +81,22 @@ html, body, #root, .portfolio-app, .app-header {
     height: 60px;
 }
 
+.app-resume {
+    margin-right: 15%;
+}
+
+.app-resume h2, .app-resume p {
+    margin: 10px 0px;
+}
+
+.app-resume h3 {
+    margin: 5px 0px;
+}
+
+.app-resume ul li {
+    list-style: none;
+}
+
 .app-footer {
     height: 60px;
     width: 100%;

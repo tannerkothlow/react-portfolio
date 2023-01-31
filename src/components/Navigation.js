@@ -32,7 +32,7 @@ const displayPortfolio = (
 const displayResume = (
     <div className='app-resume'>
         <h2>Resume</h2>
-        <p>Download my resume</p>
+        <p>Resume Download Coming Soon!</p>
         <h3>Front End Proficiencies</h3>
         <ul>
             <li>HTML</li>
@@ -43,7 +43,7 @@ const displayResume = (
         <ul>
             <li>Node.js</li>
             <li>MongoDB</li>
-            <li></li>
+            <li>Express.js</li>
         </ul>
     </div>
 )
