@@ -7,9 +7,10 @@ function Header(props) {
 
     const changeState = (e) => {
         e.preventDefault();
-
+        // Changes the activated tab
+        document.getElementById(displayState).style.color = "black";
         setDisplayState(e.target.id);
-        console.log(displayState);
+        // document.getElementById(displayState).style.color = "blue";
     }
 
     return (
@@ -17,8 +18,8 @@ function Header(props) {
             <div className='header-block'>
             <h1>Portfolio</h1>
             <ul>
-                <li id='about-me' onClick={changeState}>About Me</li>
-                <li id='portfolio' onClick={changeState}v>Portfolio</li>
+                <li style={{color: "seashell"}} id='about-me' onClick={changeState}>About Me</li>
+                <li id='portfolio' onClick={changeState}>Portfolio</li>
                 <li id='contact' onClick={changeState}>Contact</li>
                 <li id='resume' onClick={changeState}>Resume</li>
             </ul>

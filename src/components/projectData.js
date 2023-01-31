@@ -6,7 +6,7 @@ const placeholderProject1 = {
     title: `Placeholder Project`,
     image: placeholderImageURL,
     url: `https://github.com/tannerkothlow/react-portfolio`,
-    tech: `MERN Stack`
+    tech: `React Framework`
 }
 
 const placeholderProject2 = {
@@ -14,7 +14,7 @@ const placeholderProject2 = {
     title: `Placeholder Project`,
     image: placeholderImageURL,
     url: `https://github.com/tannerkothlow/react-portfolio`,
-    tech: `MERN Stack`
+    tech: `React Framework`
 }
 
 const placeholderProject3 = {
@@ -22,7 +22,7 @@ const placeholderProject3 = {
     title: `Placeholder Project`,
     image: placeholderImageURL,
     url: `https://github.com/tannerkothlow/react-portfolio`,
-    tech: `MERN Stack`
+    tech: `React Framework`
 }
 
 const placeholderProject4 = {
@@ -30,7 +30,7 @@ const placeholderProject4 = {
     title: `Placeholder Project`,
     image: placeholderImageURL,
     url: `https://github.com/tannerkothlow/react-portfolio`,
-    tech: `MERN Stack`
+    tech: `React Framework`
 }
 
 const placeholderProject5 = {
@@ -38,7 +38,7 @@ const placeholderProject5 = {
     title: `Placeholder Project`,
     image: placeholderImageURL,
     url: `https://github.com/tannerkothlow/react-portfolio`,
-    tech: `MERN Stack`
+    tech: `React Framework`
 }
 
 export const projects = [placeholderProject1, placeholderProject2, placeholderProject3, placeholderProject4, placeholderProject5];
