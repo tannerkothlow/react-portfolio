@@ -51,6 +51,8 @@ const displayResume = (
 
 function Navigation(props) {
 
+    // Displays active "tab" by changing header link stylings.
+
     let display;
 
     // Checks for any static asset state
@@ -157,7 +159,6 @@ function Navigation(props) {
 
         display = displayContact;
     }
-
     return (
         <div className='app-navigator'>
             <div className='app-nav-box'>
