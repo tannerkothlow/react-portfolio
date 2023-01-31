@@ -140,7 +140,7 @@ function Navigation(props) {
                     type="text"
                     placeholder="Email"
                     />
-                    <input
+                    <textarea
                     value={contactMessage}
                     name="contactMessage"
                     onChange={handleInputChange}

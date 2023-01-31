@@ -51,6 +51,34 @@ html, body, #root, .portfolio-app, .app-header {
 
 .app-nav-box {
     padding: 1% 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.app-about-me {
+    margin-top: 2%;
+    width: 70%;
+    color:rgb(202, 202, 202)
+}
+
+.app-about-me p {
+    margin: 10px 0px;
+    /* color: rgb(185, 185, 185); */
+}
+
+.app-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-contact input, .app-contact textarea {
+    width: 100%;
+    margin: 5px 0px;
+    height: 20px;
+}
+
+.app-contact textarea {
+    height: 60px;
 }
 
 .app-footer {
