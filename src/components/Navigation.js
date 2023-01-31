@@ -1,6 +1,7 @@
 import userEvent from '@testing-library/user-event';
 import React, { useState } from 'react';
 import Project from './Project';
+import { projects } from './projectData';
 
 // Static objects do not need appended logic.
 
@@ -20,10 +21,11 @@ const displayAboutMe = (
     </div>
 )
 
+// If pulling from a database and not a static asset, place inside Navigation so await calls are preformed at appropriate times
 const displayPortfolio = (
     <div className='app-portfolio'>
         <h2>Portfolio</h2>
-        <Project />
+        <Project projects={projects}/>
     </div>
 )
 
@@ -41,7 +43,7 @@ const displayResume = (
         <ul>
             <li>Node.js</li>
             <li>MongoDB</li>
-            <li>Express.js</li>
+            <li></li>
         </ul>
     </div>
 )

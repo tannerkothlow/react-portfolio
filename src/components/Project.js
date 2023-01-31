@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 
-function Project () {
+// const placeholderProject = {
+//     title: `Placeholder Project`,
+//     url: ``,
+//     tech: `MERN Stack`
+// }
+
+function Project (props) {
     return (
         <div className='app-project'>
             <div className='app-project-card'>
