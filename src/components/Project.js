@@ -7,11 +7,18 @@ import React, { useState } from 'react';
 // }
 
 function Project (props) {
+    console.log(props.projects);
+    
+
     return (
         <div className='app-project'>
-            <div className='app-project-card'>
-                <p>Cool project</p>
-            </div>
+            {props.projects.map(project => (
+                <div className='app-project-card' key={project.id}>
+                    <a href={project.url}>{project.title}</a>
+                    <p>{project.tech}</p>
+                    <img src={project.image}></img>
+                </div>
+            ))}
         </div>
     )
 }
