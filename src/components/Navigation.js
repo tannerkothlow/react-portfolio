@@ -32,7 +32,17 @@ const displayResume = (
         <h2>Resume</h2>
         <p>Download my resume</p>
         <h3>Front End Proficiencies</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ul>
         <h3>Back End Proficiencies</h3>
+        <ul>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+            <li>Express.js</li>
+        </ul>
     </div>
 )
 
@@ -85,13 +95,11 @@ function Navigation(props) {
                 document.getElementById('form-warning').innerHTML = `Your email is invalid!`;
                 setValidForm(false);
             }else if (name === 'contactMessage' && !value) {
-                console.log(`You must include a message!`)
                 document.getElementById('form-warning').innerHTML = `You must include a message!`;
                 setValidForm(false)
             } else {
-                setValidForm(true);
-                console.log(validForm);
                 document.getElementById('form-warning').innerHTML = ``;
+                setValidForm(true);
             }
         };
 
@@ -99,13 +107,14 @@ function Navigation(props) {
             e.preventDefault();
             console.log(validForm);
             if (validForm && contactName && contactEmail && contactMessage) {
-                console.log(contactName, contactEmail, contactMessage);
+                // console.log(contactName, contactEmail, contactMessage);
+                alert(`Contact form submitted!`)
                 setContactName('');
                 setContactEmail('');
                 setContactMessage('');
                 setValidForm(false);
             } else {
-                console.log(`Form not accepted!`)
+                alert(`Please fill out the form completely and correctly!`)
             }
             
         };
