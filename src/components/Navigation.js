@@ -8,7 +8,7 @@ import { projects } from './projectData';
 const displayAboutMe = (
     <div className='app-about-me'>
         <h2>About Me</h2>
-        <p>Icon</p>
+        {/* <p>Icon</p> */}
         <p>
             Filler text filler text filler text filler text filler text filler text filler text filler text filler text filler text filler text filler text filler text 
             filler text filler text filler text filler text filler text filler text filler text filler text filler text filler text filler text 
