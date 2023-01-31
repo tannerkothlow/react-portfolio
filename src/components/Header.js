@@ -18,7 +18,7 @@ function Header(props) {
             <div className='header-block'>
             <h1>Portfolio</h1>
             <ul>
-                <li id='about-me' onClick={changeState}>About Me</li>
+                <li style={{color: "seashell"}} id='about-me' onClick={changeState}>About Me</li>
                 <li id='portfolio' onClick={changeState}>Portfolio</li>
                 <li id='contact' onClick={changeState}>Contact</li>
                 <li id='resume' onClick={changeState}>Resume</li>

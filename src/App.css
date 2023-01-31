@@ -38,6 +38,10 @@ html, body, #root, .portfolio-app, .app-header {
     list-style: none;
 }
 
+.header-block ul li:first {
+    color: seashell  
+}
+
 .header-block ul li:hover {
     color: seashell;
     cursor: pointer;

@@ -52,6 +52,11 @@ const displayResume = (
 function Navigation(props) {
 
     // Displays active "tab" by changing header link stylings.
+    if (document.getElementById(props.display)) {
+        // console.log(document.getElementById(props.display).style.color)
+        document.getElementById(props.display).style.color = "seashell";
+    }
+    
 
     let display;
 
@@ -111,7 +116,7 @@ function Navigation(props) {
             e.preventDefault();
             console.log(validForm);
             if (validForm && contactName && contactEmail && contactMessage) {
-                // console.log(contactName, contactEmail, contactMessage);
+                console.log(contactName, contactEmail, contactMessage);
                 alert(`Contact form submitted!`)
                 setContactName('');
                 setContactEmail('');
