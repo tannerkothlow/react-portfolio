@@ -1,4 +1,4 @@
-import userEvent from '@testing-library/user-event';
+// import userEvent from '@testing-library/user-event';
 import React, { useState } from 'react';
 import Project from './Project';
 import { projects } from './projectData';
@@ -76,11 +76,11 @@ function Navigation(props) {
             break;
     };
     // If contact form state, attach JS logic to displayContact before sending it higher up.
+    const [contactName, setContactName] = useState('');
+    const [contactEmail, setContactEmail] = useState('');
+    const [contactMessage, setContactMessage] = useState('');
+    const [validForm, setValidForm] = useState(false);
     if (props.display == 'contact') {
-        const [contactName, setContactName] = useState('');
-        const [contactEmail, setContactEmail] = useState('');
-        const [contactMessage, setContactMessage] = useState('');
-        const [validForm, setValidForm] = useState(false);
 
         const regexEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navigation from './Navigation';
 import Footer from './Footer';
 
-function Header(props) {
+function Header() {
     const [displayState, setDisplayState] = useState('about-me');
 
     const changeState = (e) => {
