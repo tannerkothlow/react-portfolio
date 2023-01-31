@@ -67,7 +67,12 @@ html, body, #root, .portfolio-app, .app-header {
 }
 
 .app-portfolio {
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.app-portfolio h2 {
+    margin-left: 20px;
 }
 
 .app-project {
@@ -76,17 +81,29 @@ html, body, #root, .portfolio-app, .app-header {
 }
 
 .app-project-card {
+    background-size: 320px;
+    /* width: 40%; */
+    width: 320px;
+    height: 216px;
+    margin: 10px 20px;
+}
+
+.app-card-holder {
     width: 40%;
 }
 
-.app-project-card img {
+/* .app-project-card img {
     width: 280px;
-}
+} */
 
 .card-placard {
     position: relative;
     top: 65px;
     left: 13px;
+}
+
+.app-project-card:hover {
+    box-shadow: inset 0px 0px 100px 5px blue;
 }
 
 .app-contact {
