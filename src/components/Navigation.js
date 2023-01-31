@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Project from './Project';
 
+// Static objects do not need appended logic.
+
 const displayAboutMe = (
     <div className='app-about-me'>
         <h2>About Me</h2>
@@ -23,37 +25,6 @@ const displayPortfolio = (
         <Project />
     </div>
 )
-
-// const displayContact = (
-//     <div className='app-contact'>
-//         <h2>Contact Me</h2>
-//         {/* name, email, message */}
-//         <form className="form">
-//             <input
-//             value={contactName}
-//             name="contactName"
-//             type="text"
-//             placeholder="Name"
-//             />
-//             <input
-//             value={contactEmail}
-//             name="contactEmail"
-//             type="text"
-//             placeholder="Email"
-//             />
-//             <input
-//             value={contactMessage}
-//             name="conactMessage"
-//             onChange={handleInputChange}
-//             type="text"
-//             placeholder="First Name"
-//             />
-//         <button type="button" onClick={handleFormSubmit}>
-//           Submit
-//         </button>
-//       </form>
-//     </div>
-// )
 
 const displayResume = (
     <div className='app-resume'>
@@ -84,7 +55,7 @@ function Navigation(props) {
             break;
     };
     // If contact form state, attach JS logic to displayContact before sending it higher up.
-    if (props.display = 'contact') {
+    if (props.display == 'contact') {
         const [contactName, setContactName] = useState('');
         const [contactEmail, setContactEmail] = useState('');
         const [contactMessage, setContactMessage] = useState('');
@@ -92,11 +63,19 @@ function Navigation(props) {
         const handleInputChange = (e) => {
             const { name, value } = e.target;
         
-            return name === 
-            'contactName' ? setContactName(value) 
-            : 'contactEmail' ? setContactEmail(value)
-            : setContactMessage(value);
-          };
+            // Ternary was causing complications with double setting.
+            switch(name) {
+                case 'contactName':
+                    setContactName(value);
+                    break;
+                case 'contactEmail':
+                    setContactEmail(value);
+                    break;
+                case 'contactMessage':
+                    setContactMessage(value);
+                    break;
+            };
+        };
 
         const handleFormSubmit = (e) => {
             e.preventDefault();
@@ -128,10 +107,10 @@ function Navigation(props) {
                     />
                     <input
                     value={contactMessage}
-                    name="conactMessage"
+                    name="contactMessage"
                     onChange={handleInputChange}
                     type="text"
-                    placeholder="First Name"
+                    placeholder="Message"
                     />
                 <button type="button" onClick={handleFormSubmit}>
                   Submit
