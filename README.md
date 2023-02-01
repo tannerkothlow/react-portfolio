@@ -6,7 +6,7 @@ For the penultimate (required) challenge for our coding bootcamp, we were tasked
 
 Coming out the gate from our week of class, I've got to say I'm already in love with React. It's such an intuitive and easy way to easily organize and serve HTML to the user. I can absolutely see myself using it more in future projects and commissions. 
 
-For the notable techniques used, the `About Me` and `Resume` pages were completely static assets, they can just live as `const's` and can be served up usings `states` in the `Header` componant. The `Navigation` componant nested within the Header responds to a number of display states that are set using a number of "hyperlinks". The navigation componant takes in the `displayState` and will return the respective JSX blocks.
+For the notable techniques used, the `About Me` and `Resume` pages were completely static assets, they can just live as `const's` and can be served up usings `states` in the `Header` componant. The `Navigation` componant nested within the Header responds to a number of display states that are set using a number of "hyperlinks". The navigation componant takes in the `displayState` and will return the respective JSX blocks. The `Projects` in the `Portfolio` tab were also created using a mapping of a dummy DB call (seeded as static data in it's own file) as it's own componant.
 
 The other notable technique was for the contact form. Using change states for the username, email and message allowed me to do real time validation for things like verifying a user has entered a regex compliant email address, or had populated the message text area before submission. The form would only submit if all three fields were populated, AND a validation state defaulting to `false` had been set to `true` after passing a number of tests.
 
@@ -21,6 +21,20 @@ The other notable technique was for the contact form. Using change states for th
 ## Usage and Features
 
 - 
+
+![top-bar](./project/images/project-top-bar.PNG)
+
+- 
+
+![projects](./project/images/projects.PNG)
+
+- 
+
+![error1](./project/images/form.PNG)
+
+![error2](./project/images/projects.PNG)
+
+- Once your entries for the fields have been validated properly, then you can submit the form.
 
 ## License and Credit
 
