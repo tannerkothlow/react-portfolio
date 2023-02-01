@@ -20,15 +20,17 @@ The other notable technique was for the contact form. Using change states for th
 
 ## Usage and Features
 
-- 
+- To naviagte the app, click on one of the options located in the top bar. Notice how your active tab will be highlighted in white.
 
 ![top-bar](./project/images/project-top-bar.PNG)
 
-- 
+- The projects listed in the portfolio have been populated using React Componants, and could easily generate from a database call as well as a static asset included in the app.
+
+- Each card can contain a background images, a title that links to the project, and a breif description of the technology used.
 
 ![projects](./project/images/projects.PNG)
 
-- 
+- To view the contact form's included error handlers, expiriment with typing invalid emails and deleting anything you've typed.
 
 ![error1](./project/images/form.PNG)
 
